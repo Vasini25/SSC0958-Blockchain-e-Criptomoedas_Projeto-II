@@ -1,0 +1,227 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_UniName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_fundationYear",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "UniName",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "enrollmentYear",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "institutional_ID",
+						"type": "string"
+					}
+				],
+				"name": "addStudent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "chain",
+				"outputs": [
+					{
+						"internalType": "contract duuid",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "studentAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "CGPA",
+						"type": "uint256"
+					}
+				],
+				"name": "changeStudentsCGPA",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "studentAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "credits",
+						"type": "uint256"
+					}
+				],
+				"name": "concedeStudentsCredits",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "fundationYear",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "studentList",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "students",
+				"outputs": [
+					{
+						"internalType": "contract Student",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "studentsSubscribed",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/DUUID/university.sol": "University"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/DUUID/duuid.sol": {
+			"keccak256": "0x4d8f93853bf6c662a5bd01599f7eb5ba48223cc5f7d83d2e0ff36cfb1909b376",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://b8fbd1cd8e0ba9077817cf3cf466020436f9ec45220b33b7a2c1316c85a7b5f6",
+				"dweb:/ipfs/QmUq4ND4svBj66mFhxcpA1NmrBZL6EVq2Bzr5o7XYNjpts"
+			]
+		},
+		"contracts/DUUID/student.sol": {
+			"keccak256": "0x00341c591c0b3511bab5f94de068dd82e2e536e2322baab0994496f7fccc84af",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://072b31fe7be41d8b0d4d0df866a26e4a92d9476893c5ef77bb757f4cbef06a0b",
+				"dweb:/ipfs/Qmc8djV48C2NJWQjUx5RWiEzkXu9CkNkJ1GuFwpaNnfuiy"
+			]
+		},
+		"contracts/DUUID/university.sol": {
+			"keccak256": "0x94a29b639e9aaa12fc4a70264eb2246931f9166a02c3b5ba9398a75a46a24e55",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://7cdfa636b65cfc3886aa0b604549e535fe4b99bb7fb68c30872f8f81114d912d",
+				"dweb:/ipfs/QmXDDMMpNSDRXHv3BJfbpdsCsxytDk9MZaVCrBmsna5ryM"
+			]
+		}
+	},
+	"version": 1
+}

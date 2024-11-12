@@ -1,0 +1,238 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_enrollmentYear",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_institutional_ID",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_duuID_number",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "CGPA",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "credits",
+						"type": "uint256"
+					}
+				],
+				"name": "addCredits",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "creditsEarned",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "duuID_number",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "enrollmentYear",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getStudentDetails",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "giveStudentChainID",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "institutional_ID",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_CGPA",
+						"type": "uint256"
+					}
+				],
+				"name": "updateCGPA",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/DUUID/student.sol": "Student"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/DUUID/duuid.sol": {
+			"keccak256": "0x4d8f93853bf6c662a5bd01599f7eb5ba48223cc5f7d83d2e0ff36cfb1909b376",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://b8fbd1cd8e0ba9077817cf3cf466020436f9ec45220b33b7a2c1316c85a7b5f6",
+				"dweb:/ipfs/QmUq4ND4svBj66mFhxcpA1NmrBZL6EVq2Bzr5o7XYNjpts"
+			]
+		},
+		"contracts/DUUID/student.sol": {
+			"keccak256": "0x00341c591c0b3511bab5f94de068dd82e2e536e2322baab0994496f7fccc84af",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://072b31fe7be41d8b0d4d0df866a26e4a92d9476893c5ef77bb757f4cbef06a0b",
+				"dweb:/ipfs/Qmc8djV48C2NJWQjUx5RWiEzkXu9CkNkJ1GuFwpaNnfuiy"
+			]
+		},
+		"contracts/DUUID/university.sol": {
+			"keccak256": "0x2385ee224e0cc559de13588251f2477b01637f3d34efd12b2cd87b5b8c993a30",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://0343cec451c72cde87451647eaf7f6a23e11154560c1a64c9e0a4fad2cfc1a0d",
+				"dweb:/ipfs/QmcZDxCGa3rtaWW6xYh8JTs6eCDy3xYdJw3zEC8NF1kU5D"
+			]
+		}
+	},
+	"version": 1
+}
